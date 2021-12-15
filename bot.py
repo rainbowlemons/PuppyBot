@@ -44,9 +44,9 @@ async def make_noise():
     ]
 
     message_channel1 = bot.get_channel(505502750813978626)
-    #message_channel2 = bot.get_channel(695774162437799989)
+    message_channel2 = bot.get_channel(695774162437799989)
     await message_channel1.send(random.choice(puppy_noises))
-    #await message_channel2.send(random.choice(puppy_noises))
+    await message_channel2.send(random.choice(puppy_noises))
 
 @make_noise.before_loop
 async def before():
